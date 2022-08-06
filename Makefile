@@ -17,6 +17,10 @@ plan:
 apply:
 	$(TERRAFORM) apply
 
+.PHONY: output
+output:
+	$(TERRAFORM) output
+
 .PHONY: destroy
 destroy:
 	$(TERRAFORM) destroy
