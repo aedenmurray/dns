@@ -9,6 +9,6 @@ terraform {
 }
 
 locals {
-  dev = yamldecode(file("../config/aedenmurray.dev.yaml"))
-  io  = yamldecode(file("../config/aedenmurray.io.yaml"))
+  dev = yamldecode(file("../records/aedenmurray.dev.yaml"))
+  io  = yamldecode(file("../records/aedenmurray.io.yaml"))
 }
