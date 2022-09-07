@@ -7,3 +7,6 @@ records:
     - 5 alt2.aspmx.l.google.com.
     - 10 alt3.aspmx.l.google.com.
     - 10 alt4.aspmx.l.google.com.
+
+  txt:
+    - google-site-verification=EgEarN1EwJFq1MII54Bstz8YVjE5uswop8MaS9WlHIw
