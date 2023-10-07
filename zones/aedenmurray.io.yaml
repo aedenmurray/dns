@@ -5,14 +5,30 @@ rrsets:
     time: 3600
     name: aedenmurray.io
     records:
-      - 1 aspmx.l.google.com.
-      - 5 alt1.aspmx.l.google.com.
-      - 5 alt2.aspmx.l.google.com.
-      - 10 alt3.aspmx.l.google.com.
-      - 10 alt4.aspmx.l.google.com.
+      - 10 in1-smtp.messagingengine.com
+      - 20 in2-smtp.messagingengine.com
 
   - type: TXT
     time: 3600
     name: aedenmurray.io
     records:
       - google-site-verification=EgEarN1EwJFq1MII54Bstz8YVjE5uswop8MaS9WlHIw
+      - v=spf1 include:spf.messagingengine.com ?all
+
+  - type: CNAME
+    time: 3600
+    name: fm1._domainkey
+    records:
+      - fm1.aedenmurray.io.dkim.fmhosted.com
+
+  - type: CNAME
+    time: 3600
+    name: fm2._domainkey
+    records:
+      - fm2.aedenmurray.io.dkim.fmhosted.com
+
+  - type: CNAME
+    time: 3600
+    name: fm3._domainkey
+    records:
+      - fm3.aedenmurray.io.dkim.fmhosted.com
