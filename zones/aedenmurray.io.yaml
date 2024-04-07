@@ -5,32 +5,10 @@ rrsets:
     time: 3600
     name: aedenmurray.io
     records:
-      # - 10 in1-smtp.messagingengine.com
-      # - 20 in2-smtp.messagingengine.com
       - 1 smtp.google.com
 
   - type: TXT
     time: 3600
     name: aedenmurray.io
     records:
-      # - google-site-verification=EgEarN1EwJFq1MII54Bstz8YVjE5uswop8MaS9WlHIw # old
-      - google-site-verification=ZIY4nQIGu5eGAzklHb1JGcxzOIDuz505JaXW56qBTZY # new
-      # - v=spf1 include:spf.messagingengine.com ?all
-
-  # - type: CNAME
-  #   time: 3600
-  #   name: fm1._domainkey
-  #   records:
-  #     - fm1.aedenmurray.io.dkim.fmhosted.com
-
-  # - type: CNAME
-  #   time: 3600
-  #   name: fm2._domainkey
-  #   records:
-  #     - fm2.aedenmurray.io.dkim.fmhosted.com
-
-  # - type: CNAME
-  #   time: 3600
-  #   name: fm3._domainkey
-  #   records:
-  #     - fm3.aedenmurray.io.dkim.fmhosted.com
+      - google-site-verification=ZIY4nQIGu5eGAzklHb1JGcxzOIDuz505JaXW56qBTZY
