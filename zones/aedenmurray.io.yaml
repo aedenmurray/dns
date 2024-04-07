@@ -17,20 +17,20 @@ rrsets:
       - google-site-verification=ZIY4nQIGu5eGAzklHb1JGcxzOIDuz505JaXW56qBTZY # new
       # - v=spf1 include:spf.messagingengine.com ?all
 
-  - type: CNAME
-    time: 3600
-    name: fm1._domainkey
-    records:
-      - fm1.aedenmurray.io.dkim.fmhosted.com
+  # - type: CNAME
+  #   time: 3600
+  #   name: fm1._domainkey
+  #   records:
+  #     - fm1.aedenmurray.io.dkim.fmhosted.com
 
-  - type: CNAME
-    time: 3600
-    name: fm2._domainkey
-    records:
-      - fm2.aedenmurray.io.dkim.fmhosted.com
+  # - type: CNAME
+  #   time: 3600
+  #   name: fm2._domainkey
+  #   records:
+  #     - fm2.aedenmurray.io.dkim.fmhosted.com
 
-  - type: CNAME
-    time: 3600
-    name: fm3._domainkey
-    records:
-      - fm3.aedenmurray.io.dkim.fmhosted.com
+  # - type: CNAME
+  #   time: 3600
+  #   name: fm3._domainkey
+  #   records:
+  #     - fm3.aedenmurray.io.dkim.fmhosted.com
