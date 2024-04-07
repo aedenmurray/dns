@@ -13,6 +13,7 @@ rrsets:
     name: aedenmurray.dev
     records:
       - v=spf1 include:spf.messagingengine.com ?all
+      - google-site-verification=rHC7P3d_yn1YyPhTfgnawTQEBsXnMsMi_ya_8HGy3u0
 
   - type: CNAME
     time: 3600
