@@ -5,10 +5,30 @@ rrsets:
     time: 3600
     name: aedenmurray.dev
     records:
-      - 1 smtp.google.com
+      - 10 in1-smtp.messagingengine.com
+      - 20 in2-smtp.messagingengine.com
 
   - type: TXT
     time: 3600
     name: aedenmurray.dev
     records:
       - google-site-verification=rHC7P3d_yn1YyPhTfgnawTQEBsXnMsMi_ya_8HGy3u0
+      - v=spf1 include:spf.messagingengine.com ?all
+
+  - type: CNAME
+    time: 3600
+    name: fm1._domainkey.aedenmurray.dev
+    records:
+      - fm1.aedenmurray.dev.dkim.fmhosted.com
+
+  - type: CNAME
+    time: 3600
+    name: fm2._domainkey.aedenmurray.dev
+    records:
+      - fm2.aedenmurray.dev.dkim.fmhosted.com
+
+  - type: CNAME
+    time: 3600
+    name: fm3._domainkey.aedenmurray.dev
+    records:
+      - fm3.aedenmurray.dev.dkim.fmhosted.com
