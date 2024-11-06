@@ -32,3 +32,9 @@ rrsets:
     name: fm3._domainkey.aedenmurray.dev
     records:
       - fm3.aedenmurray.dev.dkim.fmhosted.com
+
+  - type: A
+    time: 3600
+    name: metadata.aedenmurray.dev
+    records:
+      - 169.254.169.254
