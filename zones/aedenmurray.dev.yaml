@@ -12,7 +12,7 @@ rrsets:
     time: 3600
     name: aedenmurray.dev
     records:
-      - google-site-verification=rHC7P3d_yn1YyPhTfgnawTQEBsXnMsMi_ya_8HGy3u0
+      - google-site-verification=ei7YA1hwy5vz39I4pPdrePubBLhoX5tuoddE3iqDwL0
       - v=spf1 include:spf.messagingengine.com ?all
 
   - type: CNAME
