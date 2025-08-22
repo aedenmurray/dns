@@ -5,8 +5,7 @@ rrsets:
     time: 3600
     name: aedenmurray.io
     records:
-      - 10 in1-smtp.messagingengine.com
-      - 20 in2-smtp.messagingengine.com
+      - 1 smtp.google.com
 
   - type: TXT
     time: 3600
