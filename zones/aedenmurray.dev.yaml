@@ -14,6 +14,12 @@ rrsets:
       - google-site-verification=ei7YA1hwy5vz39I4pPdrePubBLhoX5tuoddE3iqDwL0
       - v=spf1 include:_spf.google.com ~all
 
+  - type: TXT
+    time: 3600
+    name: google._domainkey.aedenmurray.dev
+    records:
+      - v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqsfQ+wksyf+uXRqQHCzMUUkGQwP6QJ1dJ6rOtPeQ1106ikjfQ2vXiLbOq8LA7t7DoHv36h7zK6Dkz3mq0MIb99eq87oE069DaYLsU4X0Wu37Abi8tKlhH3owJIsUZByhSzX9jST9WDondkhwZTU91fBHWOLHUJ6gKue/hsgzAj/QCv5SerxjJp5rR7ebvtIqRWdHvulfDH/sOO521MZCXmozsld5ReuBIuethHM0EKW3moz6BVzRtOoeXK8ahXCwsIGW/aHcIJGKOP4TKgtyugNyKk7fMCB/toodeuQhj16xaP3Asu/k/QtLO+nFEGA5ra5edFbMa1gZilUeyXZnrwIDAQAB
+
   - type: A
     time: 3600
     name: metadata.aedenmurray.dev

@@ -13,3 +13,9 @@ rrsets:
     records:
       - google-site-verification=ZIY4nQIGu5eGAzklHb1JGcxzOIDuz505JaXW56qBTZY
       - v=spf1 include:_spf.google.com ~all
+
+  - type: TXT
+    time: 3600
+    name: google._domainkey.aedenmurray.io
+    records:
+      - v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAusmEJV/Rl8Nab4UhRsASocpxbDWEdX6dJqY1IuTsEaIrBJebstZRrSU14U6pHZX/oYvUZrNf9pKA77XpmrVU/qtyIfvrKAxFVC7k4Gjm38gCqB/3+H1AJqj9ZiMXBdcE17lBnyP/jIwKmF10NRHvkk/mA7nUyT/3yWjvxjSgHtDBf+C1LfABZ0E5+E0nY6xsqnyqk8j8ym/lYmrXwuVbvc93bWYauFngTIDXzZIo/DK3rXcvOLbCiE68ew1gAdITGrKrVvmcJo/mWDZeEjUOaBqaLEocxUuphfhkLZOnZAulaPpFKOQyjBXba1bLl2QUnrRexLkpK16KQOZTFLOKWQIDAQAB

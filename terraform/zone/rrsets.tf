@@ -12,8 +12,16 @@ resource "aws_route53_record" "main" {
     }
   }
 
+
+  records = [
+    for record in each.value.records :
+    length(record) > 255 ? join("\" \"", [
+      for i in range(0, length(record), 255) :
+      substr(record, i, min(255, length(record) - i))
+    ]) : record
+  ]
+
   zone_id = aws_route53_zone.main.id
-  records = each.value.records
   name    = split(":", each.key)[0]
   type    = split(":", each.key)[1]
   ttl     = each.value.time
