@@ -12,3 +12,4 @@ rrsets:
     name: murray.eco
     records:
       - google-site-verification=MKV7M0YKvHSYIUcfvBWGs9W1hkk16xaSBYHzPUBO3sI
+      - v=spf1 include:_spf.google.com ~all
