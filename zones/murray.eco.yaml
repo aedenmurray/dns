@@ -6,3 +6,9 @@ rrsets:
     name: murray.eco
     records:
       - 1 smtp.google.com
+
+  - type: TXT
+    time: 3600
+    name: murray.eco
+    records:
+      - google-site-verification=MKV7M0YKvHSYIUcfvBWGs9W1hkk16xaSBYHzPUBO3sI
