@@ -15,7 +15,7 @@ rrsets:
       - v=spf1 include:_spf.google.com ~all
 
   - type: TXT
-    time: 60
+    time: 3600
     name: google._domainkey.murray.eco
     records:
       - v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqe04gCiMGqOH9N1dbFKAHghjaEKnpGc6gPSwsDjxnM/CKt8wCirun+LVTaNSOSfE9Tzgxp/bxv2N5docUqKQwuak202wSdZkVOFQ5+v2osJ9WsfivOShsMiXzyx+7qHrkIGjrLI/Qyn3HrHUfbZ9jzDNadN6mxiecSMeKolEFwRQ66OG0bLcqvgxleUrWHZ0aJjdAg/p3nJ0t8TEBrPyIry3swVr26nr4z/B7on0NJMEHZh1lTkKOYcfjZYWM4RC/J4rO//y9aJ4+V6NVR2m7asEyi3qdPiRC+x4MHWWfKc2XGU28oAwgcw1aoXbARU5z8SsM5+rlehhlOoMYKNP1QIDAQAB
