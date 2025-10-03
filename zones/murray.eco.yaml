@@ -1,0 +1,8 @@
+name: murray.eco
+
+rrsets:
+  - type: MX
+    time: 3600
+    name: murray.eco
+    records:
+      - 1 smtp.google.com
