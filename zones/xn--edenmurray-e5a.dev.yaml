@@ -7,3 +7,10 @@ rrsets:
     name: xn--edenmurray-e5a.dev
     records:
       - 1 smtp.google.com
+
+  - type: TXT
+    time: 3600
+    name: xn--edenmurray-e5a.dev
+    records:
+      - google-site-verification=TGkWcI3Li43ZXSo8jXeXv0gfxRa2JagiwTDdiy2xgqg
+      - v=spf1 include:_spf.google.com ~all
