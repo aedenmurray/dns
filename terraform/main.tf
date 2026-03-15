@@ -13,22 +13,26 @@ resource "aws_route53_delegation_set" "main" {
 }
 
 module "aedenmurray_dev" {
-  source = "./zone"
-  zone   = yamldecode(file("../zones/aedenmurray.dev.yaml"))
-
-  delegation_set_id = aws_route53_delegation_set.main.id
-}
-
-module "aedenmurray_io" {
-  source = "./zone"
-  zone   = yamldecode(file("../zones/aedenmurray.io.yaml"))
-
+  source            = "./zone"
+  zone              = yamldecode(file("../zones/aedenmurray.dev.yaml"))
   delegation_set_id = aws_route53_delegation_set.main.id
 }
 
 module "murray_eco" {
-  source = "./zone"
-  zone   = yamldecode(file("../zones/murray.eco.yaml"))
-
+  source            = "./zone"
+  zone              = yamldecode(file("../zones/murray.eco.yaml"))
   delegation_set_id = aws_route53_delegation_set.main.id
 }
+
+module "aedenmurray_io" {
+  source            = "./zone"
+  zone              = yamldecode(file("../zones/aedenmurray.io.yaml"))
+  delegation_set_id = aws_route53_delegation_set.main.id
+}
+
+module "xn--edenmurray-e5a_dev" {
+  source            = "./zone"
+  zone              = yamldecode(file("../zones/xn--edenmurray-e5a.dev.yaml"))
+  delegation_set_id = aws_route53_delegation_set.main.id
+}
+
