@@ -14,3 +14,9 @@ rrsets:
     records:
       - google-site-verification=TGkWcI3Li43ZXSo8jXeXv0gfxRa2JagiwTDdiy2xgqg
       - v=spf1 include:_spf.google.com ~all
+
+  - type: TXT
+    time: 3600
+    name: _dmarc.xn--edenmurray-e5a.dev
+    records:
+      - v=DMARC1; p=none; rua=mailto:aeden@xn--edenmurray-e5a.dev
