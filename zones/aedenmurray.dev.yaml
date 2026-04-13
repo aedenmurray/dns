@@ -11,9 +11,8 @@ rrsets:
     time: 3600
     name: aedenmurray.dev
     records:
-      - sophos-domain-verification=ee406ceca0f7dda59e9b41598abe4bb2633d3b1019dcef6ab89e1729b1f3b8e8
       - google-site-verification=ei7YA1hwy5vz39I4pPdrePubBLhoX5tuoddE3iqDwL0
-      - v=spf1 include:_spf.google.com ~all
+      - v=spf1 include:_spf.google.com -all
 
   - type: TXT
     time: 3600
@@ -25,7 +24,7 @@ rrsets:
     time: 3600
     name: _dmarc.aedenmurray.dev
     records:
-      - v=DMARC1; p=none; rua=mailto:aeden@aedenmurray.dev
+      - v=DMARC1; p=reject; adkim=s; aspf=s; rua=mailto:aeden@aedenmurray.dev
 
   - type: A
     time: 3600

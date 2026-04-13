@@ -12,7 +12,7 @@ rrsets:
     name: aedenmurray.io
     records:
       - google-site-verification=ZIY4nQIGu5eGAzklHb1JGcxzOIDuz505JaXW56qBTZY
-      - v=spf1 include:_spf.google.com ~all
+      - v=spf1 include:_spf.google.com -all
 
   - type: TXT
     time: 3600
@@ -24,4 +24,10 @@ rrsets:
     time: 3600
     name: _dmarc.aedenmurray.io
     records:
-      - v=DMARC1; p=none; rua=mailto:aeden@aedenmurray.io
+      - v=DMARC1; p=reject; adkim=s; aspf=s; rua=mailto:aeden@aedenmurray.io
+
+  - type: A
+    time: 3600
+    name: metadata.aedenmurray.io
+    records:
+      - 169.254.169.254

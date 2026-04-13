@@ -29,10 +29,3 @@ module "aedenmurray_io" {
   zone              = yamldecode(file("../zones/aedenmurray.io.yaml"))
   delegation_set_id = aws_route53_delegation_set.main.id
 }
-
-module "xn--edenmurray-e5a_dev" {
-  source            = "./zone"
-  zone              = yamldecode(file("../zones/xn--edenmurray-e5a.dev.yaml"))
-  delegation_set_id = aws_route53_delegation_set.main.id
-}
-

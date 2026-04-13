@@ -12,7 +12,7 @@ rrsets:
     name: murray.eco
     records:
       - google-site-verification=MKV7M0YKvHSYIUcfvBWGs9W1hkk16xaSBYHzPUBO3sI
-      - v=spf1 include:_spf.google.com ~all
+      - v=spf1 include:_spf.google.com -all
 
   - type: TXT
     time: 3600
@@ -24,4 +24,10 @@ rrsets:
     time: 3600
     name: _dmarc.murray.eco
     records:
-      - v=DMARC1; p=none; rua=mailto:aeden@murray.eco
+      - v=DMARC1; p=reject; adkim=s; aspf=s; rua=mailto:aeden@murray.eco
+
+  - type: A
+    time: 3600
+    name: metadata.murray.eco
+    records:
+      - 169.254.169.254
